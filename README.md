@@ -1,4 +1,4 @@
-Hello-World
+Cruz Jurado (personal web)
 ===========
 
-This is my first repo, just to say Hello to all you folks!
+This repository is being used to track the development of Cruz Jurado (personal web) work. 
