@@ -1,322 +1,38 @@
-
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    
-    <title>Prueba Web Cruz</title>
-    
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    
-    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Advent+Pro:300,400' rel='stylesheet' type='text/css'>
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="assets/js/responsiveslides.min.js"></script>
-    <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-
-      $("#slider_wd").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "callbacks",
-        before: function () {
-          $('.events').append("<li>before event fired.</li>");
-        },
-        after: function () {
-          $('.events').append("<li>after event fired.</li>");
-        }
-      });
-
-    });
-  </script>
-        
-</head>
-
-<body>
-
-	<header>
-    	<h1 >
-        	<a title="Cruz-Jurado" href="index.html">
-            	Cruz Jurado
-            </a>
-        </h1>
-        <h2>
-        	<a title="Creativity-at-your-service" href="index.html">
-            	Creativity at your service
-            </a>
-         </h2>
-    </header>  
-               
-    <nav>
-      <ul>
-          <li>
-              <a href="web_design.html" alt="web design">Web Design</a>
-             </li>
-          <li>
-              <a href="#mar2">Front End</a>
-             </li>
-          <li>
-              <a href="#mar3">UX/UI</a>
-             </li>           
-          <li>
-              <a href="#mar4">Illustration</a>
-             </li>
-          <li>
-              <a href="#mar5">Graphic Design</a>
-             </li>
-          <!--... -->  
-             
-         </ul>
-    </nav> 
+<?php include '/Applications/MAMP/htdocs/prueba6/includes/header.php';?>
 
 <div id="content">
-        <a href="index.html"><p></p></a>
-<!--        <h1>WELCOME TO MY SITE!</h1>
+  <!--        <a href="index.html"><p></p></a>
+        <h1>WELCOME TO MY SITE!</h1>
 -->        
-        <p>What can I do for you?</p>
-        <p>I'm here because...</p>
-        <br>
-        <div class="col">
-        	<a  href="web_design.html" alt="web design">
-            	<img class="wd" src="assets/img/choice_button_wd.png">
-            </a>
-         	<a>
-            	<img class="wd" src="assets/img/choice_button_fed.png">
-        	</a>
-        	<a>
-            	<img class="wd" src="assets/img/choice_button_uid.png">
-        	</a>
-        	<a>
-            	<img class="wd" src="assets/img/choice_button_ill.png">
-        	</a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <p>&nbsp;</p>
-        <br>
-        <p>Other reason...</p>
-        <br>
-        <br>
-        <br>
-        <br>        <br>
-        <p>&nbsp;</p>
-        <a name="mar1"><p></p></a>
-        <h1>WEB DESIGN</h1>
-        <p>I would love to Design for you a <span>unique</span> web site, based on your preferences and necessities:
-        
-           <!-- <div class="wd group">
-				<ul id="images" class="slider">
-				    <li class="group">
-				        <a href="#">
-				            <img src="assets/img/img1.jpg" alt="" />
-				        </a>
-				        <div class="caption bottom">
-				            <h3>Caption Area</h3>
-				            <p>Wood texture by <a href="http://downloads.dvq.co.nz/" class="button">Matthew Skiles.</a></p>
-				        </div>
-				    </li>
-				    <li class="group">
-				        <a href="#" class="slide-parent">
-				            <img src="assets/img/img2.jpg" alt=""/>
-				        </a>
-				        <div class="rs-caption rs-top-right">
-				            <p>This image is wrapped in a link.</p>
-				        </div>
-				    </li>
-				    <li class="group">
-				        <img src="assets/img/img3.jpg" alt=""/>
-				        <div class="rs-caption rs-bottom-right">
-				            <p>Adapted from <a class="button" href="http://dribbble.com/shots/154205-Cool-Green-Signup-form">Glenn Van Bogaert</a></p>
-				        </div>
-				    </li>
-				    <li class="group"><img src="assets/img/red.jpg" alt=""/>
-				    </li>
-				    <li class="group"><img src="assets/img/6.jpg" alt=""/></li>
-				</ul>
-            </div> -->
-        <div id="wrapper">    
-            <div class="callbacks_container">
-                <ul class="rslides" id="slider_wd">
-                  <li>
-                    <img src="assets/img/img1.jpg" alt="">
-                    <p class="caption">This is a caption</p>
-                  </li>
-                  <li>
-                    <img src="assets/img/img2.jpg" alt="">
-                    <p class="caption">This is another caption</p>
-                  </li>
-                  <li>
-                    <img src="assets/img/img3.jpg" alt="">
-                    <p class="caption">The third caption</p>
-                  </li>
-                </ul>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a name="mar2"><p></p></a>
-        <h1>FRONT END DEVELOPMENT</h1>
-        <p>I love clean code.</p>
-        <p>I have knowledge of HTML/5, CSS/3, JavaScript(jQuery), CMS(Wordpress)</p>
-        <p>If I don't know something, I learn quite fast, so don't worry about that.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a name="mar3"><p></p></a>
-        <h1>UX/UI</h1>
-        <p>I will conceptualize the User Experience/Interface of your Web platform</p>
-        <p>Thinking in Design and Usability, but also the emotions and feelings generated in the user.</p>
-        <p>My aim is to create for you a very suggestive, definetly inspiring visual user interfaces.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a name="mar4"><p></p></a>
-        <h1>ILLUSTRATION</h1>
-        <p>Creating things is one of my passions. Telling a story, giving a new approach/style to things, renewing...</p>
-        <p>I can be extremely realistic if I need to.</p>
-        <p>Tell me your dream, we will make it real</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a name="mar5"><p></p></a>
-        <h1>GRAPHIC DESIGN</h1>
-        <p>I love aesthetic design. With a strong fine-art background, I really enjoy playing with color palettes, composition, grids, layouts, logos, typography... and so on.</p>
-        <p>Check it out some examples here.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+  <p>What can I do for you?</p>
+  <p>I'm here because...</p>
+  <br>
+    <div class="col">
+      <a  href="#" alt="web design">
+        <img class="wd" src="assets/img/choice_button_wd.png">
+      </a>
+      <a>
+        <img class="wd" src="assets/img/choice_button_fed.png">
+      </a>
+      <a>
+        <img class="wd" src="assets/img/choice_button_uid.png">
+      </a>
+      <a>
+        <img class="wd" src="assets/img/choice_button_ill.png">
+      </a>
     </div>
-      
-    <footer>Nor Dinosaurs were harmed in the making of this website</footer>
-    <script>
-	  $(function() {
-		$(".rslides").responsiveSlides();
-	  });
-	</script>
-</body>
+  <br>
+  <br>
+  <br>
+  <p>&nbsp;</p>
+  <br>
+  <p>Other reason...</p>
+  <br>
+  <br>
+  <br>
+  <br>        <br>
+  <p>&nbsp;</p>
+</div>
 
-</html>
+      
+<?php include '/Applications/MAMP/htdocs/prueba6/includes/footer.php';?>
