@@ -1,8 +1,5 @@
 
 <!doctype html>
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <html>
 <head>
     <meta charset="UTF-8">
@@ -13,17 +10,33 @@
     
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/refineslide.css">
- 	<link rel="stylesheet" href="assets/css/refineslide-theme-dark.css" />
+    
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Advent+Pro:300,400' rel='stylesheet' type='text/css'>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="assets/js/responsiveslides.min.js"></script>
+    <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
 
-    <script src="assets/js/modernizr.js"></script>
- 
-     <!--[if lt IE 9]>
-        <script src="assets/js/respond.min.js"></script>
-	<![endif]-->
-       
+      $("#slider_wd").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+        
 </head>
 
 <body>
@@ -44,7 +57,7 @@
     <nav>
       <ul>
           <li>
-              <a href="#mar1">Web Design</a>
+              <a href="web_design.html" alt="web design">Web Design</a>
              </li>
           <li>
               <a href="#mar2">Front End</a>
@@ -65,22 +78,23 @@
 
 <div id="content">
         <a href="index.html"><p></p></a>
-        <h1>WELCOME TO MY SITE!</h1>
-        <p>What can I do for you? I would love to help...</p>
+<!--        <h1>WELCOME TO MY SITE!</h1>
+-->        
+        <p>What can I do for you?</p>
         <p>I'm here because...</p>
         <br>
         <div class="col">
-        	<a>
+        	<a  href="web_design.html" alt="web design">
             	<img class="wd" src="assets/img/choice_button_wd.png">
             </a>
          	<a>
-            	<img class="fed" src="assets/img/choice_button_fed.png">
+            	<img class="wd" src="assets/img/choice_button_fed.png">
         	</a>
         	<a>
-            	<img class="uid" src="assets/img/choice_button_uid.png">
+            	<img class="wd" src="assets/img/choice_button_uid.png">
         	</a>
         	<a>
-            	<img class="ill" src="assets/img/choice_button_ill.png">
+            	<img class="wd" src="assets/img/choice_button_ill.png">
         	</a>
         </div>
         <br>
@@ -97,23 +111,14 @@
         <a name="mar1"><p></p></a>
         <h1>WEB DESIGN</h1>
         <p>I would love to Design for you a <span>unique</span> web site, based on your preferences and necessities:
-        <ul>
-          <li>Simple and fast</li>
-          <li>Oriented to webcommerce</li>
-          <li>Presentation one</li>
-          <li>Better if you <a href="#">tell me</a></li>
-        </ul>
-        </p>
-        <p>&nbsp;</p>
-        <br>
-        <br>
-            <div class="section-2 group">
-				<ul id="images" class="rs-slider">
+        
+           <!-- <div class="wd group">
+				<ul id="images" class="slider">
 				    <li class="group">
 				        <a href="#">
 				            <img src="assets/img/img1.jpg" alt="" />
 				        </a>
-				        <div class="rs-caption rs-bottom">
+				        <div class="caption bottom">
 				            <h3>Caption Area</h3>
 				            <p>Wood texture by <a href="http://downloads.dvq.co.nz/" class="button">Matthew Skiles.</a></p>
 				        </div>
@@ -136,16 +141,31 @@
 				    </li>
 				    <li class="group"><img src="assets/img/6.jpg" alt=""/></li>
 				</ul>
-            </div> <!-- /.section-2 -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+            </div> -->
+        <div id="wrapper">    
+            <div class="callbacks_container">
+                <ul class="rslides" id="slider_wd">
+                  <li>
+                    <img src="assets/img/img1.jpg" alt="">
+                    <p class="caption">This is a caption</p>
+                  </li>
+                  <li>
+                    <img src="assets/img/img2.jpg" alt="">
+                    <p class="caption">This is another caption</p>
+                  </li>
+                  <li>
+                    <img src="assets/img/img3.jpg" alt="">
+                    <p class="caption">The third caption</p>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
         <br>
         <br>
         <br>
@@ -292,16 +312,11 @@
     </div>
       
     <footer>Nor Dinosaurs were harmed in the making of this website</footer>
-    
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery.refineslide.min.js"></script>  
-	<script src="assets/js/ios-orientation-change-fix.js"></script>
-
     <script>
-        $(document).ready(function () {
-            $('.rs-slider').refineSlide();
-        });
-    </script>
+	  $(function() {
+		$(".rslides").responsiveSlides();
+	  });
+	</script>
 </body>
 
 </html>
