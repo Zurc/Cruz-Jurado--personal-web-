@@ -1,4 +1,4 @@
-<?php include '/Applications/MAMP/htdocs/prueba6/includes/header.php';?>
+<?php include 'includes/header.php';?>
 
 
     <div id="content">
@@ -20,4 +20,4 @@
         
     </div>
       
-<?php include '/Applications/MAMP/htdocs/prueba6/includes/footer.php';?>
+<?php include 'includes/footer.php';?>
