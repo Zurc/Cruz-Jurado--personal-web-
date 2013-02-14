@@ -31,5 +31,4 @@
       <p>&nbsp;</p>
 </div>
 
-      
 <?php include 'includes/footer.php';?>
