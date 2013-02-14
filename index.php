@@ -8,13 +8,13 @@
             <a  href="web_design.php" alt="web design">
                 <img class="wd" src="assets/img/choice_button_wd.png">
             </a>
-            <a>
+            <a  href="front_end.php" alt="front end">
                 <img class="wd" src="assets/img/choice_button_fed.png">
             </a>
-            <a>
+            <a  href="ux_ui.php" alt="user experience / user interface designer">
                 <img class="wd" src="assets/img/choice_button_uid.png">
             </a>
-            <a>
+            <a  href="illust.php" alt="illustrator">
                 <img class="wd" src="assets/img/choice_button_ill.png">
             </a>
       </div>
@@ -31,4 +31,5 @@
       <p>&nbsp;</p>
 </div>
 
+      
 <?php include 'includes/footer.php';?>
