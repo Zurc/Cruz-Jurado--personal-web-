@@ -14,15 +14,12 @@
                       <ul class="rslides" id="slider_wd">
                             <li>
                               <img src="assets/img/img1.jpg" alt="">
-                              <p class="caption">This is a caption</p>
                             </li>
                             <li>
                               <img src="assets/img/img2.jpg" alt="">
-                              <p class="caption">This is another caption</p>
                             </li>
                             <li>
                               <img src="assets/img/img3.jpg" alt="">
-                              <p class="caption">The third caption</p>
                             </li>
                       </ul>
                 </div>
