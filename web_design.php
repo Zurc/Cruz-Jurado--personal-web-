@@ -5,7 +5,7 @@
     
         <div class="text-wrapper">
             <h1>WEB DESIGN</h1>
-            <p>I would love to Design for you a <span>unique</span> web site, based on your preferences and necessities:</p>
+            <p>I would love to Design for you a <span>unique</span> web site, based on your preferences and necessities. Here some samples of my designs:</p>
         </div>
         
         <div id="wrapper">    
